@@ -145,3 +145,29 @@
     color: #fff; /* White toggle icon */
   }
 }
+.navbar-search {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.search-button {
+  padding: 5px 10px;
+  margin-left: 5px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}

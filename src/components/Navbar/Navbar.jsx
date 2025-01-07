@@ -25,6 +25,14 @@ function Navbar() {
           <Link to="/alerts-notifications">NOTIFICATIONS</Link>
         </li>
       </ul>
+      <div className="navbar-search">
+        <input 
+          type="text" 
+          placeholder="Search..." 
+          className="search-input" 
+        />
+        <button className="search-button" type="button">Search</button>
+      </div>
     </nav>
   );
 }

@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/telecom-inventory-management-system/static/css/main.a6c5a591.css",
-    "main.js": "/telecom-inventory-management-system/static/js/main.8e53ff66.js",
+    "main.css": "/telecom-inventory-management-system/static/css/main.cf2a3af1.css",
+    "main.js": "/telecom-inventory-management-system/static/js/main.c8393037.js",
     "static/js/488.4fb7d592.chunk.js": "/telecom-inventory-management-system/static/js/488.4fb7d592.chunk.js",
     "static/media/image2.jpg": "/telecom-inventory-management-system/static/media/image2.590eab6e1ebb98f7c38d.jpg",
     "static/media/image3.jpg": "/telecom-inventory-management-system/static/media/image3.40c458b17ad2da84d90e.jpg",
     "static/media/image1.jpg": "/telecom-inventory-management-system/static/media/image1.921e681ec34df4deb25b.jpg",
     "index.html": "/telecom-inventory-management-system/index.html",
-    "main.a6c5a591.css.map": "/telecom-inventory-management-system/static/css/main.a6c5a591.css.map",
-    "main.8e53ff66.js.map": "/telecom-inventory-management-system/static/js/main.8e53ff66.js.map",
+    "main.cf2a3af1.css.map": "/telecom-inventory-management-system/static/css/main.cf2a3af1.css.map",
+    "main.c8393037.js.map": "/telecom-inventory-management-system/static/js/main.c8393037.js.map",
     "488.4fb7d592.chunk.js.map": "/telecom-inventory-management-system/static/js/488.4fb7d592.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6c5a591.css",
-    "static/js/main.8e53ff66.js"
+    "static/css/main.cf2a3af1.css",
+    "static/js/main.c8393037.js"
   ]
 }

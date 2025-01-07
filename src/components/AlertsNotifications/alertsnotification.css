@@ -1,0 +1,96 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+  }
+  
+  /* Alerts Container */
+  .alerts-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .alerts-header {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .alerts-title {
+    font-size: 36px;
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .alerts-subtitle {
+    font-size: 18px;
+    color: #7f8c8d;
+  }
+  
+  /* Alerts Content */
+  .alerts-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .alert-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .alert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .alert-title {
+    font-size: 20px;
+    color: #34495e;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  
+  .alert-description {
+    font-size: 16px;
+    color: #7f8c8d;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .alerts-title {
+      font-size: 28px;
+    }
+  
+    .alerts-subtitle {
+      font-size: 16px;
+    }
+  
+    .alert-card {
+      padding: 15px;
+    }
+  
+    .alert-title {
+      font-size: 18px;
+    }
+  
+    .alert-description {
+      font-size: 14px;
+    }
+  }
+  

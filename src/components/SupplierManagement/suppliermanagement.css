@@ -1,0 +1,111 @@
+/* General styling for Supplier Management */
+.supplier-management-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center;
+    overflow: hidden;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Title Styling */
+  .supplier-management-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    animation: fadeInTitle 1s ease-out;
+  }
+  
+  /* Title fade-in animation */
+  @keyframes fadeInTitle {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Description styling */
+  .supplier-management-description {
+    font-size: 1.1rem;
+    color: #777;
+    margin-bottom: 30px;
+    opacity: 0.8;
+  }
+  
+  /* Button Container */
+  .supplier-actions {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  /* Button Styles */
+  .add-supplier-btn,
+  .view-suppliers-btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, black 0%, #00f2fe 100%);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+  }
+  
+  /* Button Hover Effects */
+  .add-supplier-btn:hover,
+  .view-suppliers-btn:hover {
+    background: linear-gradient(135deg, #00f2fe 0%, black 100%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+  }
+  
+  /* Button Active Effects */
+  .add-supplier-btn:active,
+  .view-suppliers-btn:active {
+    transform: translateY(1px);
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 768px) {
+    .supplier-management-container {
+      padding: 20px;
+    }
+  
+    .supplier-actions {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .add-supplier-btn,
+    .view-suppliers-btn {
+      width: 100%;
+    }
+  }
+  

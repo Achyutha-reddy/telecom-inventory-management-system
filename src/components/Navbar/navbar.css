@@ -1,0 +1,147 @@
+/* General Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000; /* Black background */
+  padding: 15px 30px;
+  color: #fff; /* White text */
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar:hover {
+  background: #111; /* Slightly lighter black on hover */
+  transform: translateY(-3px); /* Slight lift on hover */
+  box-shadow: 0 20px 40px rgba(255, 255, 255, 0.2); /* Enhanced shadow for depth */
+}
+
+/* Navbar Logo */
+.navbar-logo h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff; /* White text */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar-logo:hover h2 {
+  transform: scale(1.15); /* Slight zoom effect */
+  color: #ccc; /* Soft gray on hover */
+}
+
+/* Navbar Links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar-links li {
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.navbar-links a {
+  color: #bbb; /* Light gray */
+  text-decoration: none;
+  position: relative;
+  padding: 5px;
+  display: inline-block;
+  font-weight: 500;
+  transition: color 0.4s ease, transform 0.3s ease;
+}
+
+.navbar-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #fff; /* White underline */
+  transition: width 0.4s ease-in-out;
+  border-radius: 5px;
+}
+
+/* Hover Effects for Links */
+.navbar-links a:hover {
+  color: #fff; /* White text on hover */
+  transform: translateY(-3px); /* Lift effect */
+}
+
+.navbar-links a:hover::after {
+  width: 100%; /* Expand underline on hover */
+}
+
+/* Active Link Styles */
+.navbar-links a.active {
+  color: #fff; /* Bright white for active link */
+  font-weight: bold;
+  transform: scale(1.1); /* Slight zoom for active link */
+}
+
+.navbar-links a.active::after {
+  width: 100%; /* Full underline for active link */
+}
+
+/* Navbar Scroll Animation */
+@keyframes navbarScrollAnimation {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.navbar {
+  animation: navbarScrollAnimation 0.6s ease-out forwards;
+}
+
+/* Mobile Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-links a {
+    padding: 10px 0;
+    font-size: 1.2rem;
+    text-align: left;
+    width: 100%;
+    transition: background 0.3s ease;
+  }
+
+  .navbar-links a:hover {
+    background: #222; /* Dark gray background on hover */
+    color: #fff; /* White text on hover */
+  }
+
+  .navbar-toggle {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff; /* White toggle icon */
+  }
+}
